@@ -33,32 +33,32 @@ namespace 草堂街道社会智能数据管理系统
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.ckb_educational = new System.Windows.Forms.CheckBox();
+            this.ckb_vip = new System.Windows.Forms.CheckBox();
+            this.ckb_unjob = new System.Windows.Forms.CheckBox();
+            this.ckb_clean = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Button();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbk_mind = new System.Windows.Forms.CheckBox();
+            this.ckb_dope = new System.Windows.Forms.CheckBox();
+            this.ckb_jwry = new System.Windows.Forms.CheckBox();
+            this.ckb_released = new System.Windows.Forms.CheckBox();
+            this.ckb_correction = new System.Windows.Forms.CheckBox();
+            this.ckb_poor = new System.Windows.Forms.CheckBox();
+            this.ckb_oldman = new System.Windows.Forms.CheckBox();
+            this.ckb_canjiren = new System.Windows.Forms.CheckBox();
+            this.ckb_changzhu = new System.Windows.Forms.CheckBox();
+            this.ckb_liudong = new System.Windows.Forms.CheckBox();
             this.ssyl_cb = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.sswg_cb = new System.Windows.Forms.ComboBox();
             this.sssq_cb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIdCard = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv = new System.Windows.Forms.DataGridView();
@@ -83,6 +83,7 @@ namespace 草堂街道社会智能数据管理系统
             this.dope = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.添加人员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -94,32 +95,33 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.checkBox15);
-            this.groupBox1.Controls.Add(this.checkBox14);
-            this.groupBox1.Controls.Add(this.checkBox13);
-            this.groupBox1.Controls.Add(this.checkBox12);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.ckb_educational);
+            this.groupBox1.Controls.Add(this.ckb_vip);
+            this.groupBox1.Controls.Add(this.ckb_unjob);
+            this.groupBox1.Controls.Add(this.ckb_clean);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.search);
             this.groupBox1.Controls.Add(this.checkBox11);
-            this.groupBox1.Controls.Add(this.checkBox10);
-            this.groupBox1.Controls.Add(this.checkBox9);
-            this.groupBox1.Controls.Add(this.checkBox8);
-            this.groupBox1.Controls.Add(this.checkBox7);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.cbk_mind);
+            this.groupBox1.Controls.Add(this.ckb_dope);
+            this.groupBox1.Controls.Add(this.ckb_jwry);
+            this.groupBox1.Controls.Add(this.ckb_released);
+            this.groupBox1.Controls.Add(this.ckb_correction);
+            this.groupBox1.Controls.Add(this.ckb_poor);
+            this.groupBox1.Controls.Add(this.ckb_oldman);
+            this.groupBox1.Controls.Add(this.ckb_canjiren);
+            this.groupBox1.Controls.Add(this.ckb_changzhu);
+            this.groupBox1.Controls.Add(this.ckb_liudong);
             this.groupBox1.Controls.Add(this.ssyl_cb);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.sswg_cb);
             this.groupBox1.Controls.Add(this.sssq_cb);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtIdCard);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtUserName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 28);
             this.groupBox1.Name = "groupBox1";
@@ -128,45 +130,45 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "人员管理";
             // 
-            // checkBox15
+            // ckb_educational
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(698, 87);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(48, 16);
-            this.checkBox15.TabIndex = 26;
-            this.checkBox15.Text = "党员";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.ckb_educational.AutoSize = true;
+            this.ckb_educational.Location = new System.Drawing.Point(698, 87);
+            this.ckb_educational.Name = "ckb_educational";
+            this.ckb_educational.Size = new System.Drawing.Size(48, 16);
+            this.ckb_educational.TabIndex = 26;
+            this.ckb_educational.Text = "党员";
+            this.ckb_educational.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // ckb_vip
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(698, 65);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(72, 16);
-            this.checkBox14.TabIndex = 25;
-            this.checkBox14.Text = "重要人员";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.ckb_vip.AutoSize = true;
+            this.ckb_vip.Location = new System.Drawing.Point(698, 65);
+            this.ckb_vip.Name = "ckb_vip";
+            this.ckb_vip.Size = new System.Drawing.Size(72, 16);
+            this.ckb_vip.TabIndex = 25;
+            this.ckb_vip.Text = "重要人员";
+            this.ckb_vip.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // ckb_unjob
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(698, 42);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(72, 16);
-            this.checkBox13.TabIndex = 24;
-            this.checkBox13.Text = "失业人员";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.ckb_unjob.AutoSize = true;
+            this.ckb_unjob.Location = new System.Drawing.Point(698, 42);
+            this.ckb_unjob.Name = "ckb_unjob";
+            this.ckb_unjob.Size = new System.Drawing.Size(72, 16);
+            this.ckb_unjob.TabIndex = 24;
+            this.ckb_unjob.Text = "失业人员";
+            this.ckb_unjob.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // ckb_clean
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(698, 20);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(72, 16);
-            this.checkBox12.TabIndex = 23;
-            this.checkBox12.Text = "清洁人员";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.ckb_clean.AutoSize = true;
+            this.ckb_clean.Location = new System.Drawing.Point(698, 20);
+            this.ckb_clean.Name = "ckb_clean";
+            this.ckb_clean.Size = new System.Drawing.Size(72, 16);
+            this.ckb_clean.TabIndex = 23;
+            this.ckb_clean.Text = "清洁人员";
+            this.ckb_clean.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -185,6 +187,7 @@ namespace 草堂街道社会智能数据管理系统
             this.search.TabIndex = 21;
             this.search.Text = "筛选";
             this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // checkBox11
             // 
@@ -197,106 +200,106 @@ namespace 草堂街道社会智能数据管理系统
             this.checkBox11.Text = "空巢";
             this.checkBox11.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // cbk_mind
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Enabled = false;
-            this.checkBox10.Location = new System.Drawing.Point(500, 64);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(48, 16);
-            this.checkBox10.TabIndex = 19;
-            this.checkBox10.Text = "精神";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.cbk_mind.AutoSize = true;
+            this.cbk_mind.Enabled = false;
+            this.cbk_mind.Location = new System.Drawing.Point(500, 64);
+            this.cbk_mind.Name = "cbk_mind";
+            this.cbk_mind.Size = new System.Drawing.Size(48, 16);
+            this.cbk_mind.TabIndex = 19;
+            this.cbk_mind.Text = "精神";
+            this.cbk_mind.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // ckb_dope
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(596, 87);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(72, 16);
-            this.checkBox9.TabIndex = 18;
-            this.checkBox9.Text = "吸毒人员";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.ckb_dope.AutoSize = true;
+            this.ckb_dope.Location = new System.Drawing.Point(596, 87);
+            this.ckb_dope.Name = "ckb_dope";
+            this.ckb_dope.Size = new System.Drawing.Size(72, 16);
+            this.ckb_dope.TabIndex = 18;
+            this.ckb_dope.Text = "吸毒人员";
+            this.ckb_dope.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // ckb_jwry
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(434, 108);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(72, 16);
-            this.checkBox8.TabIndex = 17;
-            this.checkBox8.Text = "境外人员";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.ckb_jwry.AutoSize = true;
+            this.ckb_jwry.Location = new System.Drawing.Point(434, 108);
+            this.ckb_jwry.Name = "ckb_jwry";
+            this.ckb_jwry.Size = new System.Drawing.Size(72, 16);
+            this.ckb_jwry.TabIndex = 17;
+            this.ckb_jwry.Text = "境外人员";
+            this.ckb_jwry.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // ckb_released
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(596, 42);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(72, 16);
-            this.checkBox7.TabIndex = 16;
-            this.checkBox7.Text = "刑满人员";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.ckb_released.AutoSize = true;
+            this.ckb_released.Location = new System.Drawing.Point(596, 42);
+            this.ckb_released.Name = "ckb_released";
+            this.ckb_released.Size = new System.Drawing.Size(72, 16);
+            this.ckb_released.TabIndex = 16;
+            this.ckb_released.Text = "刑满人员";
+            this.ckb_released.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // ckb_correction
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(596, 20);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(72, 16);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "矫正人员";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.ckb_correction.AutoSize = true;
+            this.ckb_correction.Location = new System.Drawing.Point(596, 20);
+            this.ckb_correction.Name = "ckb_correction";
+            this.ckb_correction.Size = new System.Drawing.Size(72, 16);
+            this.ckb_correction.TabIndex = 15;
+            this.ckb_correction.Text = "矫正人员";
+            this.ckb_correction.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // ckb_poor
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(596, 65);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(72, 16);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.Text = "低保人员";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.ckb_poor.AutoSize = true;
+            this.ckb_poor.Location = new System.Drawing.Point(596, 65);
+            this.ckb_poor.Name = "ckb_poor";
+            this.ckb_poor.Size = new System.Drawing.Size(72, 16);
+            this.ckb_poor.TabIndex = 14;
+            this.ckb_poor.Text = "低保人员";
+            this.ckb_poor.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // ckb_oldman
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(434, 86);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(60, 16);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.Text = "老年人";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.ckb_oldman.AutoSize = true;
+            this.ckb_oldman.Location = new System.Drawing.Point(434, 86);
+            this.ckb_oldman.Name = "ckb_oldman";
+            this.ckb_oldman.Size = new System.Drawing.Size(60, 16);
+            this.ckb_oldman.TabIndex = 13;
+            this.ckb_oldman.Text = "老年人";
+            this.ckb_oldman.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // ckb_canjiren
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(434, 64);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(60, 16);
-            this.checkBox3.TabIndex = 12;
-            this.checkBox3.Text = "残疾人";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ckb_canjiren.AutoSize = true;
+            this.ckb_canjiren.Location = new System.Drawing.Point(434, 64);
+            this.ckb_canjiren.Name = "ckb_canjiren";
+            this.ckb_canjiren.Size = new System.Drawing.Size(60, 16);
+            this.ckb_canjiren.TabIndex = 12;
+            this.ckb_canjiren.Text = "残疾人";
+            this.ckb_canjiren.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // ckb_changzhu
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(434, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 16);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.Text = "常住人员";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ckb_changzhu.AutoSize = true;
+            this.ckb_changzhu.Location = new System.Drawing.Point(434, 42);
+            this.ckb_changzhu.Name = "ckb_changzhu";
+            this.ckb_changzhu.Size = new System.Drawing.Size(72, 16);
+            this.ckb_changzhu.TabIndex = 11;
+            this.ckb_changzhu.Text = "常住人员";
+            this.ckb_changzhu.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckb_liudong
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(434, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(72, 16);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "流动人员";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckb_liudong.AutoSize = true;
+            this.ckb_liudong.Location = new System.Drawing.Point(434, 20);
+            this.ckb_liudong.Name = "ckb_liudong";
+            this.ckb_liudong.Size = new System.Drawing.Size(72, 16);
+            this.ckb_liudong.TabIndex = 10;
+            this.ckb_liudong.Text = "流动人员";
+            this.ckb_liudong.UseVisualStyleBackColor = true;
             // 
             // ssyl_cb
             // 
@@ -351,12 +354,12 @@ namespace 草堂街道社会智能数据管理系统
             this.label3.TabIndex = 4;
             this.label3.Text = "所属社区";
             // 
-            // textBox2
+            // txtIdCard
             // 
-            this.textBox2.Location = new System.Drawing.Point(57, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 3;
+            this.txtIdCard.Location = new System.Drawing.Point(57, 60);
+            this.txtIdCard.Name = "txtIdCard";
+            this.txtIdCard.Size = new System.Drawing.Size(100, 21);
+            this.txtIdCard.TabIndex = 3;
             // 
             // label2
             // 
@@ -367,12 +370,12 @@ namespace 草堂街道社会智能数据管理系统
             this.label2.TabIndex = 2;
             this.label2.Text = "身份证";
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtUserName.Location = new System.Drawing.Point(57, 22);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(100, 21);
+            this.txtUserName.TabIndex = 1;
             // 
             // label1
             // 
@@ -628,6 +631,16 @@ namespace 草堂街道社会智能数据管理系统
             this.添加人员ToolStripMenuItem.Text = "添加人员";
             this.添加人员ToolStripMenuItem.Click += new System.EventHandler(this.添加人员ToolStripMenuItem_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(730, 113);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "导出结果";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // ppmanager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -653,26 +666,26 @@ namespace 草堂街道社会智能数据管理系统
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ckb_jwry;
+        private System.Windows.Forms.CheckBox ckb_released;
+        private System.Windows.Forms.CheckBox ckb_correction;
+        private System.Windows.Forms.CheckBox ckb_poor;
+        private System.Windows.Forms.CheckBox ckb_oldman;
+        private System.Windows.Forms.CheckBox ckb_canjiren;
+        private System.Windows.Forms.CheckBox ckb_changzhu;
+        private System.Windows.Forms.CheckBox ckb_liudong;
         private System.Windows.Forms.ComboBox ssyl_cb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox sswg_cb;
         private System.Windows.Forms.ComboBox sssq_cb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIdCard;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox cbk_mind;
+        private System.Windows.Forms.CheckBox ckb_dope;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.Button button1;
@@ -680,10 +693,10 @@ namespace 草堂街道社会智能数据管理系统
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 添加人员ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgv;
-        private CheckBox checkBox14;
-        private CheckBox checkBox13;
-        private CheckBox checkBox12;
-        private CheckBox checkBox15;
+        private CheckBox ckb_vip;
+        private CheckBox ckb_unjob;
+        private CheckBox ckb_clean;
+        private CheckBox ckb_educational;
         private DataGridViewTextBoxColumn name;
         private DataGridViewTextBoxColumn district;
         private DataGridViewTextBoxColumn grid;
@@ -703,5 +716,6 @@ namespace 草堂街道社会智能数据管理系统
         private DataGridViewTextBoxColumn released;
         private DataGridViewTextBoxColumn poor;
         private DataGridViewTextBoxColumn dope;
+        private Button button2;
     }
 }
