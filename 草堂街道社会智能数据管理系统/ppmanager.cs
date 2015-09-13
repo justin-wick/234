@@ -311,6 +311,7 @@ namespace 草堂街道社会智能数据管理系统
                 tempSql += " and features.handicapped is not null";
                 // TODO
                 if (cbk_mind.Checked) {
+                    tempSql += " and exists(select id from handicapped where handicapped_type =0 and id = features.handicapped)";
                 }
             }
 
@@ -318,6 +319,10 @@ namespace 草堂街道社会智能数据管理系统
             if (ckb_oldman.Checked)
             {
                 tempSql += " and features.old is not null";
+
+                if (ckb_kongchao.Checked) {
+                    tempSql += " and features.old_alone is not null";
+                }
             }
 
             // 境外人员
@@ -374,6 +379,31 @@ namespace 草堂街道社会智能数据管理系统
             }
 
             dgv.DataSource = db.GetDataSet(tempSql, "t").Tables["t"];
+        }
+
+        private void ckb_canjiren_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckb_canjiren.Checked)
+            {
+                cbk_mind.Enabled = true;
+            }
+            else {
+                cbk_mind.Enabled = false;
+                cbk_mind.Checked = false;
+            }
+        }
+
+        private void ckb_oldman_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckb_oldman.Checked)
+            {
+                ckb_kongchao.Enabled = true;
+            }
+            else
+            {
+                ckb_kongchao.Enabled = false;
+                ckb_kongchao.Checked = false;
+            }
         }
     }
 }

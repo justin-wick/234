@@ -39,7 +39,7 @@ namespace 草堂街道社会智能数据管理系统
             this.ckb_clean = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Button();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.ckb_kongchao = new System.Windows.Forms.CheckBox();
             this.cbk_mind = new System.Windows.Forms.CheckBox();
             this.ckb_dope = new System.Windows.Forms.CheckBox();
             this.ckb_jwry = new System.Windows.Forms.CheckBox();
@@ -102,7 +102,7 @@ namespace 草堂街道社会智能数据管理系统
             this.groupBox1.Controls.Add(this.ckb_clean);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.search);
-            this.groupBox1.Controls.Add(this.checkBox11);
+            this.groupBox1.Controls.Add(this.ckb_kongchao);
             this.groupBox1.Controls.Add(this.cbk_mind);
             this.groupBox1.Controls.Add(this.ckb_dope);
             this.groupBox1.Controls.Add(this.ckb_jwry);
@@ -189,16 +189,16 @@ namespace 草堂街道社会智能数据管理系统
             this.search.UseVisualStyleBackColor = true;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
-            // checkBox11
+            // ckb_kongchao
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Enabled = false;
-            this.checkBox11.Location = new System.Drawing.Point(500, 86);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(48, 16);
-            this.checkBox11.TabIndex = 20;
-            this.checkBox11.Text = "空巢";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.ckb_kongchao.AutoSize = true;
+            this.ckb_kongchao.Enabled = false;
+            this.ckb_kongchao.Location = new System.Drawing.Point(500, 86);
+            this.ckb_kongchao.Name = "ckb_kongchao";
+            this.ckb_kongchao.Size = new System.Drawing.Size(48, 16);
+            this.ckb_kongchao.TabIndex = 20;
+            this.ckb_kongchao.Text = "空巢";
+            this.ckb_kongchao.UseVisualStyleBackColor = true;
             // 
             // cbk_mind
             // 
@@ -270,6 +270,7 @@ namespace 草堂街道社会智能数据管理系统
             this.ckb_oldman.TabIndex = 13;
             this.ckb_oldman.Text = "老年人";
             this.ckb_oldman.UseVisualStyleBackColor = true;
+            this.ckb_oldman.CheckedChanged += new System.EventHandler(this.ckb_oldman_CheckedChanged);
             // 
             // ckb_canjiren
             // 
@@ -280,6 +281,7 @@ namespace 草堂街道社会智能数据管理系统
             this.ckb_canjiren.TabIndex = 12;
             this.ckb_canjiren.Text = "残疾人";
             this.ckb_canjiren.UseVisualStyleBackColor = true;
+            this.ckb_canjiren.CheckedChanged += new System.EventHandler(this.ckb_canjiren_CheckedChanged);
             // 
             // ckb_changzhu
             // 
@@ -687,7 +689,7 @@ namespace 草堂街道社会智能数据管理系统
         private System.Windows.Forms.CheckBox cbk_mind;
         private System.Windows.Forms.CheckBox ckb_dope;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox ckb_kongchao;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.MenuStrip menuStrip1;
